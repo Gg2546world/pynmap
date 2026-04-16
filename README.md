@@ -21,7 +21,7 @@ The project follows a **Modular Architecture** to ensure maintainability:
 ## 🛠️ Installation
 ```bash
 # Clone the repository
-git clone [https://github.com/yourusername/pynmap.git](https://github.com/yourusername/pynmap.git)
+git clone https://github.com/Gg2546world/pynmap.git
 
 # Enter the project directory
 cd pynmap
