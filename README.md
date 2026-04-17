@@ -26,6 +26,6 @@ git clone https://github.com/Gg2546world/pynmap.git
 # Enter the project directory
 cd pynmap
 
-# Install dependencies
-pip install -r requirements.txt
-
+# Setup the script as system command
+chmod +x setup.sh
+./setup.sh

@@ -15,9 +15,9 @@ logger = setup_logger()
 @time_decorator
 def sn(ip: str,
         mw: int = 100,
-        color: bool = False,
-        animation: bool= True,
-        save: bool= True,
+        color: bool = typer.Option(False, "-c/-C"),
+        animation: bool= typer.Option(True, "-a/-A"),
+        save: bool= typer.Option(True, "-s/-S"),
         ):
 
     try:
@@ -56,12 +56,12 @@ def sn(ip: str,
 @time_decorator
 def sp(ip: str,
        mw: int = 100,
-       color: bool = False,
-       animation: bool= True,
+       color: bool = typer.Option(False, "-c/-C"),
+       animation: bool= typer.Option(True, "-a/-A"),
        pr: str= "1,1024",
        pl: str= "1,2",
        po: str= "1",
-       save: bool= True
+       save: bool= typer.Option(True, "-s/-S")
        ):
 
     try:
@@ -103,5 +103,4 @@ def sp(ip: str,
 
 
 
-if __name__ == "__main__":
-    app()
+app()
